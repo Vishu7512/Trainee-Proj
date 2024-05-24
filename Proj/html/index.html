@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>New-Proj</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="/images/uhost-icon.png" />
+      </div>
+      <div class="openMenu"><i class="fa fa-bars"></i></div>
+      <div class="topnav">
+        <a href="#news">Package</a>
+        <a href="#contact">Customers</a>
+        <button><a href="#about">Start Hosting</a></button>
+      </div>
+      <!-- <div class="closeMenu"><i class="fa fa-times"></i></div> -->
+    </nav>
+  </body>
+  <script>
+    const topnav = document.querySelector(".topnav");
+    // const closeMenu = document.querySelector(".closeMenu");
+    const openMenu = document.querySelector(".openMenu");
+
+    openMenu.addEventListener("click", show);
+    // closeMenu.addEventListener("click", close);
+
+    function show() {
+      topnav.style.display = "flex";
+      topnav.style.top = "0";
+    }
+    // function close() {
+    //   topnav.style.top = "-100%";
+    // }
+  </script>
+</html>

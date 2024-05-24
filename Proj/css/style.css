@@ -1,0 +1,83 @@
+nav {
+  background-color: rgb(6, 196, 101);
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  margin: 10px 10px 10px 10px;
+}
+
+.topnav a {
+  color: #0e0a0a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav {
+  margin: 20px 10px 10px 10px;
+}
+.topnav button {
+  background-color: rgb(255, 27, 104);
+  width: 135px;
+  padding: 0px;
+  border-radius: 10px;
+}
+
+nav .topnav a:hover {
+  background: rgb(255, 27, 104);
+}
+nav .topnav button a:hover {
+  background: none;
+}
+
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav .topnav .closemenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+  nav .topnav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(219, 206, 206);
+    transition: top 1s ease;
+    display: none;
+  }
+nav .topnav .closemenu{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+}
+  nav .openMenu {
+    display: block;
+  }
+  nav .topnav a:hover {
+    background: none;
+    color: rgb(255, 27, 104);
+    font-size: 1.6rem;
+  }
+  nav .topnav button a:hover {
+    background: none;
+  }
+}
