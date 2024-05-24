@@ -3,41 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="/Proj/css/style.css" />
+   <link rel="icon" type="img/png" href="/Proj/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
     <title>New-Proj</title>
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <img src="/images/uhost-icon.png" />
-      </div>
-      <div class="openMenu"><i class="fa fa-bars"></i></div>
-      <div class="topnav">
-        <a href="#news">Package</a>
-        <a href="#contact">Customers</a>
-        <button><a href="#about">Start Hosting</a></button>
-      </div>
-      <!-- <div class="closeMenu"><i class="fa fa-times"></i></div> -->
+<nav>
+        <input type="checkbox" id="check">
+        <label for="check"><i class="fa fa-bars" id="checkbtn"></i></label>
+        <label class="logo"><img src="/Proj/images/uhost-icon.png"></label>
+        <ul>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#" class="bg-red">Start Hosting</a></li>
+        </ul>
     </nav>
+    <div class="container">
+      <h2>Get the Freedom You Deserve</h2>
+    </div>
+
+<div class="mid-container">
+  <p>Choose Your Plan</p>
+</div>
+<div class="card-sec">
+<div class="card">
+  
+  <div class="container1">
+    <h4><b>FREE</b></h4> 
+    <p>$0/month</p>
+     <h4>For hobby projects or small teams.</h4>
+    <p>1 workspaces <br> Unlimited Traffic <br> 10GB Storage <br>Basic Support</p>
+  </div>
+</div>
+<div class="card1">
+  
+  <div class="container1">
+    <h4><b>PLUS</b></h4> 
+    <p>$29/month</p> 
+     <h4>For ambitious projects.</h4>
+    <p>5 workspaces <br> Unlimited Traffic <br> 100GB Storage <br> Plus Support</p>
+  </div>
+</div>
+<div class="card">
+  
+  <div class="container1">
+     <h4><b>PREMIUM</b></h4> 
+    <p>$99/month</p>
+    <h4>Your Enterprise Solution</h4>
+    <p>10 workspaces <br> Unlimited Traffic <br> Unlimited Storage <br>Priority Support</p>
+  </div>
+</div>
+</div>
+
   </body>
-  <script>
-    const topnav = document.querySelector(".topnav");
-    // const closeMenu = document.querySelector(".closeMenu");
-    const openMenu = document.querySelector(".openMenu");
-
-    openMenu.addEventListener("click", show);
-    // closeMenu.addEventListener("click", close);
-
-    function show() {
-      topnav.style.display = "flex";
-      topnav.style.top = "0";
-    }
-    // function close() {
-    //   topnav.style.top = "-100%";
-    // }
-  </script>
 </html>

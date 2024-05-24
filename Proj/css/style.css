@@ -3,86 +3,183 @@
   padding: 0;
   box-sizing: border-box;
 }
-nav {
-  background-color: rgb(6, 196, 101);
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo img {
-  height: 50px;
-  width: 50px;
-  margin: 10px 10px 10px 10px;
-}
-
-.topnav a {
-  color: #0e0a0a;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav {
-  margin: 20px 10px 10px 10px;
-}
-.topnav button {
-  background-color: rgb(255, 27, 104);
-  width: 135px;
-  padding: 0px;
-  border-radius: 10px;
-}
-
-nav .topnav a:hover {
-  background: rgb(255, 27, 104);
-}
-nav .topnav button a:hover {
-  background: none;
-}
-
-nav .openMenu {
-  font-size: 2rem;
-  margin: 20px;
-  display: none;
-  cursor: pointer;
-}
-nav .topnav .closemenu , .icons i {
-    font-size: 2rem;
-    display: none;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 640px) {
-  nav .topnav {
-    height: 100vh;
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #06c465;
     position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 10;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: rgb(219, 206, 206);
-    transition: top 1s ease;
-    display: none;
-  }
-nav .topnav .closemenu{
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+}
+.logo img{
+    height: 40px;
+    width: 40px;
+    margin: 15px 60px;
+}
+nav ul{
+    float: right;
+    display: flex;
+}
+nav ul li{
+    list-style-type: none;
+    line-height: 80px;
+    padding: 0 20px;
     
 }
-  nav .openMenu {
-    display: block;
-  }
-  nav .topnav a:hover {
-    background: none;
-    color: rgb(255, 27, 104);
-    font-size: 1.6rem;
-  }
-  nav .topnav button a:hover {
-    background: none;
-  }
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+nav ul li a.bg-red, a:hover{
+    background-color: #ff0063;
+    padding: 5px;
+    border-radius: 8px;
+    color: #dbd0d0;
+}
+#checkbtn{
+    float: left;
+    line-height: 80px;
+    margin-right: 10px;
+    font-size: 30px;
+    display: none;
+   
+}
+#check{
+    display: none;
+}
+#check:checked ~ ul{
+    left:-200px
+}
+
+
+.container {
+  width: 100vw;
+  background-image: url("/Proj/images/freedom.jpg");
+  height: 500px;
+  background-size: cover;
+  /* opacity: 0.7; */
+}
+.container h2{
+  color: white;
+  position: relative;
+  top: 450px;
+  left: 20px;
+  font-size: 30px;
+}
+
+.mid-container p{
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bolder;
+  font-size: large;
+  color: #06c465;
+}
+.card {
+
+  transition: 0.3s;
+  width: 250px;
+  height:250px;
+  background-color: rgb(213,255,220);
+  text-align: center;
+
+}
+.card1 {
+  box-shadow: 2px 2px 5px #538e5e;
+    transition: 0.3s;
+    width: 250px;
+    height: 275px;
+    background-color: #19b84c;
+    z-index: 10;
+    transform: translateY(-10px);
+    text-align: center;
+}
+.card-sec{
+display:flex;
+justify-content: center;
+margin-top: 20px;
+}
+
+/* .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+} */
+
+.container {
+  padding: 2px 16px;
+}
+
+.container1 h4{
+  margin: 25px 10px 10px 10px;
+    font-size: smaller;
+}
+.container1 p{
+  margin: 18px 8px 8px 8px;
+}
+
+
+/* RWD Section */
+
+@media screen and (max-width: 640px) {
+ #checkbtn{
+        position: absolute;
+        display: block;
+        margin-left: 10px;
+        z-index: 999;
+    }
+    nav ul{
+        width: 100%;
+        height: 100vh;
+        background: #ffffff;
+        position: fixed;
+        flex-direction: column;
+        top: -10px;
+        left: -100%;
+    }
+    nav ul li{
+      display: block;
+      text-align: center;
+      transform: translate(100px, 150px);
+    }
+
+
+    .card-sec{
+      margin-top: 20px;
+      display: grid;
+}
+
+.card {
+
+  transition: 0.3s;
+  width: 250px;
+  height:250px;
+  background-color: rgb(213,255,220);
+  text-align: center;
+
+}
+.card1 {
+  box-shadow: 2px 2px 5px #538e5e;
+    transition: 0.3s;
+    width: 250px;
+    height: 275px;
+    background-color: #19b84c;
+    z-index: 10;
+    transform: translateY(-10px);
+    text-align: center;
+}
+
+
+.container {
+  padding: 2px 16px;
+}
+
+.container1 h4{
+  margin: 25px 10px 10px 10px;
+    font-size: smaller;
+}
+.container1 p{
+  margin: 18px 8px 8px 8px;
+}
+
+
 }
