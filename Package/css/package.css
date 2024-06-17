@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+  height: auto;
+  width: auto;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #06c465;
+    position: fixed;
+}
+.logo img{
+    height: 40px;
+    width: 40px;
+    margin: 15px 60px;
+}
+nav ul{
+    float: right;
+    display: flex;
+}
+nav ul li{
+    list-style-type: none;
+    line-height: 80px;
+    padding: 0 20px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+nav ul li a.bg-red, a:hover{
+    background-color: #ff0063;
+    padding: 5px;
+    border-radius: 8px;
+    color: #dbd0d0;
+}
+#checkbtn{
+    float: left;
+    line-height: 80px;
+    margin-right: 10px;
+    font-size: 30px;
+    display: none;
+   
+}
+#check{
+    display: none;
+}
+#check:checked ~ ul{
+    left:-200px
+}
+
+
+
+.package-container{
+    width: 100%;
+    height: 100%;
+}
+.package-sec{
+background-image: url("../images/plans-background.jpg");
+background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+ #checkbtn{
+        position: absolute;
+        display: block;
+        margin-left: 10px;
+        z-index: 999;
+    }
+    nav ul{
+        width: 100%;
+        height: 100vh;
+        background: #ffffff;
+        position: fixed;
+        flex-direction: column;
+        top: -10px;
+        left: -100%;
+    }
+    nav ul li{
+      display: block;
+      text-align: center;
+      transform: translate(100px, 150px);
+    }
+}

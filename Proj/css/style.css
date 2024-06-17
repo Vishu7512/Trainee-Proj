@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  overflow-x: hidden;
+  height: auto;
+  width: auto;
+}
 nav{
     width: 100%;
     height: 80px;
@@ -117,6 +122,55 @@ img {
   margin: 18px 8px 8px 8px;
 }
 
+/* Pink section(Promotion) */
+
+.pink_section {
+    margin-top: 150px;
+    background-color: #ff1b68;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ecedf1;
+    font-weight: bolder;
+}
+
+.pink_section>* svg {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-left: 30px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.promotion {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.lr_margin {
+    margin: 0 40px;
+}
+
+.footer{
+  background-color: #000000;
+    color: #ffff;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+p.text1{
+  padding-inline: 30px;
+      margin-top: 30px;
+
+}
+
 
 /* RWD Section */
 
@@ -180,6 +234,31 @@ img {
 .container1 p{
   margin: 18px 8px 8px 8px;
 }
+
+
+.promotion {
+        flex-direction: column;
+    }
+
+    .pink_section {
+        transform: translateY(-80px);
+    }
+
+    .lr_margin {
+        margin-top: 50px;
+    }
+
+    .footer {
+        transform: translateY(-25px);
+        flex-direction: column;
+    }
+
+    .text1 {
+        align-self: center;
+        margin-top: 15px;
+        margin-left: -10px;
+    }
+
 
 
 }
