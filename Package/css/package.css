@@ -3,10 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body ,
+html{
   overflow-x: hidden;
   height: auto;
   width: auto;
+  background-image: url("../images/plans-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 nav{
     width: 100%;
@@ -61,13 +66,115 @@ nav ul li a.bg-red, a:hover{
     height: 100%;
 }
 .package-sec{
-background-image: url("../images/plans-background.jpg");
-background-size: cover;
+     width: 850px;
+    height: 210px;
+    border: 2px solid #006400;
+    margin: 105px 1px 0px 250px;
+    background-color: #d5ffdc;}
+.inner-sec{
+        width: 790px;
+        height: 65px;
+        border: 1px solid #006400;
+        margin: 50px 0px 0px 20px;
+        background-color: #ffff;
+        padding: 2%;
+}
+.inner-sec p{
+    color: #808080;
+    font-size: 18px;
+}
+.inner-text{ 
+    margin: 35px 0 0 0;
+}
+.inner-text h2{
+    margin: 20px 0px 20px 20px;
+}
+
+.inner-text h3{
+    margin: 20px 0px -35px 20px;
+    color: gray;
+}
+
+
+.package-sec1{
+     width: 850px;
+    height: 210px;
+    border: 2px solid #006400;
+    margin: 30px 0px 0px 465px;
+    background-color: #d5ffdc;
+}
+.inner-sec1{
+        width: 790px;
+        height: 65px;
+        border: 1px solid #006400;
+        margin: 50px 0px 0px 20px;
+        background-color: #ffff;
+        padding: 2%;
+}
+.inner-sec1 p{
+    color: #808080;
+    font-size: 18px;
+}
+.inner-text1{ 
+    margin: 35px 0 0 0;
+}
+.inner-text1 h2{
+    margin: 20px 0px 20px 20px;
+}
+
+.inner-text1 h3{
+    margin: 20px 0px -35px 20px;
+    color: gray;
 }
 
 
 
+.package-sec2{
+        width: 850px;
+    height: 210px;
+    border: 2px solid #006400;
+    margin: 30px 1px 40px 250px;
+    background-color: #195729;
+}
+.inner-sec2{
+        width: 790px;
+        height: 65px;
+        border: 1px solid #006400;
+        margin: 50px 0px 0px 20px;
+        background-color: #ffff;
+        padding: 2%;
+}
+.inner-sec2 p{
+    color: #808080;
+    font-size: 18px;
+}
+.inner-text2{ 
+    margin: 35px 0 0 0;
+}
+.inner-text2 h2{
+    margin: 20px 0px 20px 20px;
+}
 
+.inner-text2 h3{
+    margin: 20px 0px -35px 20px;
+    color: gray;
+}
+
+.footer{
+  background-color: #000000;
+    color: #ffff;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+p.text1{
+  padding-inline: 30px;
+      margin-top: 30px;
+
+}
 
 
 
