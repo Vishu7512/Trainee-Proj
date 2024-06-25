@@ -140,18 +140,20 @@ input[type=text], input[type=email], input[type=email], input[type=password],sel
     color: #d5ffdc;
 }
 
-.footer {
-    margin-top: 50px;
-    width: 100vw;
-    background-color: #000000;
-    color: #ecedf1;
-    display: flex; 
+.footer{
+  background-color: #000000;
+    color: #ffff;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    padding: 30px;
 }
 
-.foot1 {
-    margin-left: 50px;
+p.text1{
+  padding-inline: 30px;
+      margin-top: 30px;
+
 }
 
 @media(max-width:640px) {

@@ -104,19 +104,22 @@ nav ul li a.bg-red, a:hover{
     background-color: #d5ffdc;
 }
 .inner-sec1{
-        width: 790px;
-        height: 65px;
-        border: 1px solid #006400;
-        margin: 50px 0px 0px 20px;
-        background-color: #ffff;
-        padding: 2%;
+            width: 770px;
+    height: 40px;
+    border: 1px solid #006400;
+    margin: 135px 0px 0px 20px;
+    background-color: #ffff;
+    padding: 1%;
+
 }
 .inner-sec1 p{
     color: #808080;
     font-size: 18px;
+    float: inline-end;
 }
 .inner-text1{ 
     margin: 35px 0 0 0;
+    float: right;
 }
 .inner-text1 h2{
     margin: 20px 0px 20px 20px;

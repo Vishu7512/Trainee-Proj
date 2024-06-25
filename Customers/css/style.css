@@ -97,9 +97,11 @@ nav ul li a.bg-red, a:hover{
 
 
 
+footer{
+    margin-top: 28%;
+}
 
-
-/* .footer{
+.footer1{
   background-color: #000000;
     color: #ffff;
     height: 80px;
@@ -107,14 +109,15 @@ nav ul li a.bg-red, a:hover{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-inline: 40%;
 }
 
 p.text1{
   padding-inline: 30px;
       margin-top: 30px;
+      word-spacing: 4px;
 
-} */
-
+}
 
 
 
@@ -138,5 +141,16 @@ p.text1{
       display: block;
       text-align: center;
       transform: translate(100px, 150px);
+    }
+
+     .footer {
+        transform: translateY(-25px);
+        flex-direction: column;
+    }
+
+    .text1 {
+        align-self: center;
+        margin-top: 15px;
+        margin-left: -10px;
     }
 }
